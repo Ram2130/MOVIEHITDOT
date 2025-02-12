@@ -39,6 +39,10 @@ app.use("/api/v1/product", productRoutes);
 app.use("*",(req,res)=>{
       res.sendFile(path.join(__dirname,'./client/build'));
 });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build', 'index.html'));
+});
 //rest api
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to ecommerce app nahi chal ab kais e bvhf hvhf vhfh dfsdjkfsdf dfnsdf jdsfs </h1>");
