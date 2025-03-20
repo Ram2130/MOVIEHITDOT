@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 600px) {
+    .rev{
+      flex-direction: row-reverse;
+  
+    }
+    .rev2{
+      margin-left: 0%;
+    }
+  }
